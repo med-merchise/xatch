@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "xatch"
 version = "0.1.0"
-description = ""
+description = "Basic Python libraries and tools used for various frameworks."
+readme = "README.rst"
 authors = ["Medardo Antonio Rodriguez"]
+license = "GPL-3.0-or-later"
 
 [tool.poetry.dependencies]
 python = "^3.10"
