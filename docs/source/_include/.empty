@@ -1,0 +1,9 @@
+No |KIND| content yet
+=====================
+
+Under Construction.  Delete this file when the first |KIND| is added.
+
+.. Include this file to avoid Sphinx consistency errors.  For example:
+
+     .. |KIND| replace:: ADR
+     .. include:: /_include/.empty

@@ -5,7 +5,7 @@ Welcome to Xatch's Project!
    :maxdepth: 2
    :caption: Contents:
 
-
+   arch/index
 
 Indices and tables
 ==================
