@@ -38,13 +38,13 @@ including:
 - autodoc-typehints_: to use type annotations for documenting argument types
   and return value types of functions.
 
-See RFC-1 section ` Documentation Tools <rfc-1:documentation-tools>`:ref: for
+See RFC-1 section `Documentation Tools <rfc-1:documentation-tools>`:ref: for
 more information.
 
 .. _myst: https://myst-parser.readthedocs.io/
 .. _autodoc: https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
 .. _autodoc-typehints: https://github.com/agronholm/sphinx-autodoc-typehints
-.. _myst: https://myst-parser.readthedocs.io/
+
 
 Consequences
 ------------
