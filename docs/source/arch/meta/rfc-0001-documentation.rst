@@ -259,7 +259,7 @@ clearer (see also Infographic_).
 A document usually contains metadata_ providing extra information.  Common
 fields could be: title, abstract, authors, date of creation, and keywords.
 
-Python_ projects, or those related to scientific computing, can also consider
+Projects related to scientific and/or interactive computing, can also consider
 to use `Jupyter Notebooks <jupyter_>`__ as an additional kind of file to use.
 
 .. |RST| replace:: `reStructuredText (RST)`
@@ -359,7 +359,8 @@ process with Python 3 type annotations using autodoc-typehints_.
 With Sphinx, you can use |RST|_ to write documentation.  Using |MyST|_
 extensions, you can combine native RST, with Markdown_, and `Jupyter Notebooks
 <jupyter_>`__ in the same documentation project.  To do this, configure the
-myst-parser_ and myst-nb_.
+myst-parser_ and myst-nb_.  Jupyter_ has support for various programming
+languages, including Python_, where it all started.
 
 There are some other tools from `"The Executable Books Project"
 <exe-book_>`__: an international collaboration to build open-source tools that
