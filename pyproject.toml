@@ -8,6 +8,7 @@ license = "GPL-3.0-or-later"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+httpx = "^0.23.0"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^4.0.1"
