@@ -68,18 +68,23 @@ def asdict(obj: object) -> dict[str, object]:
     from collections import abc
     import dataclasses as dc
 
-    if callable(getattr(obj, 'asdict', None)):
-        return obj.asdict()
-    elif dc.is_dataclass(obj) and not isinstance(obj, type):
-        return dc.asdict(obj)
-    elif callable(getattr(obj, 'dict', None)):  # pydantic
-        return obj.dict()
-    elif isinstance(obj, (abc.Mapping, abc.Sequence)):
-        return dict(obj)
+    if not isinstance(obj, type):
+        if callable(getattr(obj, 'asdict', None)):
+            return obj.asdict()
+        elif dc.is_dataclass(obj):
+            return dc.asdict(obj)
+        elif callable(getattr(obj, 'dict', None)):  # pydantic
+            return obj.dict()
+        elif isinstance(obj, (abc.Mapping, abc.Sequence)):
+            return dict(obj)
+        else:
+            tname = type(obj).__name__
+            raise TypeError(
+                f"asdict() should not be called on '{tname}' instances."
+            )
     else:
-        type_name = type(obj).__name__
         raise TypeError(
-            f"asdict() should not be called on '{type_name}' instances."
+            f"asdict() should not be called on '{obj.__name__}' type."
         )
 
 
