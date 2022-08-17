@@ -16,6 +16,9 @@ FormData = Union[RequestData, 'BaseForm']
 VerifySSL = str | bool | SSLContext
 
 
+T = TypeVar('T', bound='BaseModel')
+
+
 @dataclass
 class BaseModel:
     """A base class for a request API model."""
@@ -23,7 +26,7 @@ class BaseModel:
     extra_properties: AnyMapping = field(init=False, default_factory=dict)
 
     @classmethod
-    def create(cls, **kwargs: object) -> 'BaseModel':
+    def create(cls, **kwargs: object) -> T:
         """Create an instance using given keyword arguments as fields."""
         fields = cls.__dataclass_fields__
         errors = [f for f in fields if f in kwargs and not fields[f].init]
