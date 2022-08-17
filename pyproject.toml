@@ -27,3 +27,32 @@ hypothesis = "^6.46.7"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+target-version = ['py39', 'py310']
+skip-string-normalization = true
+include = '\.pyi?$'
+exclude = '''
+    /(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | build
+  | dist
+  | docs
+  )/
+  '''
+
+[tool.isort]
+profile = "black"
+line_length = 79
+src_paths = ["xatch", "tests"]
+skip_gitignore = true
+
+[tool.mypy]
+ignore_missing_imports = true
