@@ -24,6 +24,12 @@ pytest = "^7.1.2"
 tox = "^3.25.0"
 hypothesis = "^6.46.7"
 
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+xint = {path = "../xint", extras = ["docs", "notebooks"], develop = true}
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
