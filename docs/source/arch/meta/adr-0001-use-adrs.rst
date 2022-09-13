@@ -1,9 +1,7 @@
 .. _adr-0001:
 
-ADR 1: Use |ADRs|
-=================
-
-.. |ADRs| replace:: `ADRs (Architecture Decision Records)`:abbr:
+ADR 1: Use ADRs (Architecture Decision Records)
+===============================================
 
 :Author: Medardo Antonio Rodriguez
 :Date: 2022-03-14
@@ -12,22 +10,26 @@ ADR 1: Use |ADRs|
    :local:
    :depth: 2
 
+
 Status
 ------
 
 Accepted
+
 
 Context
 -------
 
 We need to record the architectural decisions made on this project.
 
+
 Decision
 --------
 
-We will use |ADRs|, as `described by Michael Nygard <nygard>`__.
+We will use ADRs, as `described by Michael Nygard <nygard_>`__.
 
 .. _nygard: http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions
+
 
 Consequences
 ------------

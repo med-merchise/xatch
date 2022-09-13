@@ -1,14 +1,24 @@
-Welcome to Xatch's Project!
-===========================
+Xatch - tools commonly used for various frameworks
+==================================================
+
+Contents
+--------
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :glob:
 
    arch/index
 
+   backlog
+   how-to
+
+   HISTORY
+   AUTHORS
+
+
 Indices and tables
-==================
+------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
