@@ -1,5 +1,5 @@
-Xatch - tools commonly used for various frameworks
-==================================================
+Xatch's documentation!
+======================
 
 Contents
 --------
@@ -8,10 +8,9 @@ Contents
    :maxdepth: 1
    :glob:
 
-   arch/index
-
+   adrs
    backlog
-   how-to
+   faqs
 
    HISTORY
    AUTHORS
