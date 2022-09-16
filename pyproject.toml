@@ -18,6 +18,11 @@ pylint = "^2.14.5"
 mypy = "^0.971"
 ipdb = "^0.13.9"
 
+[tool.poetry.group.test.dependencies]
+pytest = "^7.1.2"
+tox = "^3.25.0"
+hypothesis = "^6.46.7"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
