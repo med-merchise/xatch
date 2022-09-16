@@ -9,8 +9,14 @@ license = "GPL-3.0-or-later"
 [tool.poetry.dependencies]
 python = "^3.10"
 
-[tool.poetry.dev-dependencies]
-pytest = "^5.2"
+[tool.poetry.group.dev.dependencies]
+flake8 = "^4.0.1"
+flake8-bugbear = "^22.4.25"
+black = "^22.3.0"
+isort = "^5.10.1"
+pylint = "^2.14.5"
+mypy = "^0.971"
+ipdb = "^0.13.9"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
