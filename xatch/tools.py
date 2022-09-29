@@ -1,4 +1,11 @@
-"""Simple tools that minimize dependencies with other modules."""
+"""Collection of simple tools not tied to any specific framework.
+
+In more stable versions of `xatch`, these tools will become part of
+`xotl.tools`_.
+
+.. _xotl.tools: https://github.com/merchise/xotl.tools
+
+"""
 
 
 class Unset:
