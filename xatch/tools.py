@@ -1,6 +1,6 @@
 """Collection of simple tools not tied to any specific framework.
 
-In more stable versions of `xatch`, these tools will become part of
+In more stable versions of `xatch`, these tools will probably become part of
 `xotl.tools`_.
 
 .. _xotl.tools: https://github.com/merchise/xotl.tools
@@ -147,6 +147,10 @@ class slicer:
 
     """
 
+    def __new__(cls, *args: object) -> slice:
+        """Create a slice object (no need to use this)."""
+        return slice(*args)
+
     def __class_getitem__(cls, index: object) -> object:
-        """Create the slice."""
+        """Create the slice the correct way."""
         return index
