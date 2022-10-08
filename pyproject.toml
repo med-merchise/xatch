@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "xatch"
 version = "0.1.0"
-description = "Common tools used for various frameworks."
+description = "Non-specific tools common to various frameworks."
 readme = "README.rst"
 authors = ["Medardo Antonio Rodriguez"]
 license = "GPL-3.0-or-later"

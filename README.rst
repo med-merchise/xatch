@@ -1,7 +1,7 @@
 Xatch Project!
 ==============
 
-Common systems tools used for various frameworks.
+Non-specific tools common to various frameworks.
 
 
 Install
